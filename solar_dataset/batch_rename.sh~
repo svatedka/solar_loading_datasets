@@ -1,0 +1,5 @@
+cnt = 1
+for file in `ls ./microgrid/` ; do
+	mv ./microgrid/${file} ./microgrid_new/${cnt}.csv
+	cnt=$((cnt+1))
+done
